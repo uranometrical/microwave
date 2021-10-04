@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZtNu8XT+Gi/t/x9aoF5euRn1DcrzRsm4CqPaajqGAXKnoZdlZUKxE9s7x57ClxG7IwOPw5Hbg4ep/sxXLLYNLA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\Microwave\\Microwave.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\xxlen\\.nuget\\packages\\clifx\\2.0.6\\clifx.2.0.6.nupkg.sha512",
+    "C:\\Users\\xxlen\\.nuget\\packages\\spectre.console\\0.41.0\\spectre.console.0.41.0.nupkg.sha512",
+    "C:\\Users\\xxlen\\.nuget\\packages\\wcwidth\\0.2.0\\wcwidth.0.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

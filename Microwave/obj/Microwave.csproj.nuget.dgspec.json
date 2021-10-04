@@ -1,0 +1,203 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\Microwave\\Microwave.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\Microwave\\Microwave.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\Microwave\\Microwave.csproj",
+        "projectName": "Microwave",
+        "projectPath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\Microwave\\Microwave.csproj",
+        "packagesPath": "C:\\Users\\xxlen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\Microwave\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\xxlen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes.SpectreFx\\TomatoKnishes.SpectreFx.csproj": {
+                "projectPath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes.SpectreFx\\TomatoKnishes.SpectreFx.csproj"
+              },
+              "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes\\TomatoKnishes.csproj": {
+                "projectPath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes\\TomatoKnishes.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes.SpectreFx\\TomatoKnishes.SpectreFx.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes.SpectreFx\\TomatoKnishes.SpectreFx.csproj",
+        "projectName": "TomatoKnishes.SpectreFx",
+        "projectPath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes.SpectreFx\\TomatoKnishes.SpectreFx.csproj",
+        "packagesPath": "C:\\Users\\xxlen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes.SpectreFx\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\xxlen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes\\TomatoKnishes.csproj": {
+                "projectPath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes\\TomatoKnishes.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "CliFx": {
+              "target": "Package",
+              "version": "[2.0.6, )"
+            },
+            "Spectre.Console": {
+              "target": "Package",
+              "version": "[0.41.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes\\TomatoKnishes.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes\\TomatoKnishes.csproj",
+        "projectName": "TomatoKnishes",
+        "projectPath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes\\TomatoKnishes.csproj",
+        "packagesPath": "C:\\Users\\xxlen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\xxlen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

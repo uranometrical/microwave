@@ -1,0 +1,196 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "CliFx/2.0.6": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/CliFx.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/CliFx.dll": {}
+        }
+      },
+      "Spectre.Console/0.41.0": {
+        "type": "package",
+        "dependencies": {
+          "Wcwidth": "0.2.0"
+        },
+        "compile": {
+          "lib/net5.0/Spectre.Console.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Spectre.Console.dll": {}
+        }
+      },
+      "Wcwidth/0.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Wcwidth.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Wcwidth.dll": {}
+        }
+      },
+      "TomatoKnishes/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/TomatoKnishes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TomatoKnishes.dll": {}
+        }
+      },
+      "TomatoKnishes.SpectreFx/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CliFx": "2.0.6",
+          "Spectre.Console": "0.41.0",
+          "TomatoKnishes": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TomatoKnishes.SpectreFx.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TomatoKnishes.SpectreFx.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CliFx/2.0.6": {
+      "sha512": "rm/21Au++4zGjVDJ76e22tMLN577TNWEXwy2qhG3zlak+AGrzDDZyIl30S5vBfJU7AjURdPP/iIK0bUbNjK7cA==",
+      "type": "package",
+      "path": "clifx/2.0.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Readme.md",
+        "analyzers/dotnet/cs/CliFx.Analyzers.dll",
+        "clifx.2.0.6.nupkg.sha512",
+        "clifx.nuspec",
+        "favicon.png",
+        "lib/netstandard2.0/CliFx.dll",
+        "lib/netstandard2.0/CliFx.xml",
+        "lib/netstandard2.1/CliFx.dll",
+        "lib/netstandard2.1/CliFx.xml"
+      ]
+    },
+    "Spectre.Console/0.41.0": {
+      "sha512": "lHNIjQ2INytX8YkMQYzBVGhQAtVeJe5neClsuF8L9q8rbv0cRTkizrlgTtWpGYZq01fy1KKHATxId7uxejiK3Q==",
+      "type": "package",
+      "path": "spectre.console/0.41.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Spectre.Console.dll",
+        "lib/net5.0/Spectre.Console.xml",
+        "lib/netstandard2.0/Spectre.Console.dll",
+        "lib/netstandard2.0/Spectre.Console.xml",
+        "small-logo.png",
+        "spectre.console.0.41.0.nupkg.sha512",
+        "spectre.console.nuspec"
+      ]
+    },
+    "Wcwidth/0.2.0": {
+      "sha512": "H7no2W0vuLJTvSPanlrijtG3UdJNVoeWBOp2a5dJFVa2tqSQuP5GfbJw1xAtPG9agRW310nFTUUsyPz5tuVIxw==",
+      "type": "package",
+      "path": "wcwidth/0.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Wcwidth.dll",
+        "lib/netstandard2.0/Wcwidth.xml",
+        "wcwidth.0.2.0.nupkg.sha512",
+        "wcwidth.nuspec"
+      ]
+    },
+    "TomatoKnishes/1.0.0": {
+      "type": "project",
+      "path": "../TomatoKnishes/TomatoKnishes/TomatoKnishes.csproj",
+      "msbuildProject": "../TomatoKnishes/TomatoKnishes/TomatoKnishes.csproj"
+    },
+    "TomatoKnishes.SpectreFx/1.0.0": {
+      "type": "project",
+      "path": "../TomatoKnishes/TomatoKnishes.SpectreFx/TomatoKnishes.SpectreFx.csproj",
+      "msbuildProject": "../TomatoKnishes/TomatoKnishes.SpectreFx/TomatoKnishes.SpectreFx.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "TomatoKnishes >= 1.0.0",
+      "TomatoKnishes.SpectreFx >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\xxlen\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\Microwave\\Microwave.csproj",
+      "projectName": "Microwave",
+      "projectPath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\Microwave\\Microwave.csproj",
+      "packagesPath": "C:\\Users\\xxlen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\Microwave\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\xxlen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes.SpectreFx\\TomatoKnishes.SpectreFx.csproj": {
+              "projectPath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes.SpectreFx\\TomatoKnishes.SpectreFx.csproj"
+            },
+            "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes\\TomatoKnishes.csproj": {
+              "projectPath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes\\TomatoKnishes.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
