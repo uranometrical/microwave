@@ -8,22 +8,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\TomatoKnishes\TomatoKnishes.SpectreFx\TomatoKnishes.SpectreFx.csproj"/>
-        <ProjectReference Include="..\TomatoKnishes\TomatoKnishes\TomatoKnishes.csproj"/>
-    </ItemGroup>
-
-<<<<<<< HEAD
-    <ItemGroup>
-        <Folder Include="Commands\"/>
+        <ProjectReference Include="..\TomatoKnishes\TomatoKnishes.SpectreFx\TomatoKnishes.SpectreFx.csproj" />
+        <ProjectReference Include="..\TomatoKnishes\TomatoKnishes\TomatoKnishes.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Newtonsoft.Json" Version="13.0.1"/>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     </ItemGroup>
-=======
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-  </ItemGroup>
->>>>>>> 38cc55c566574fb6a0a1d81768dfe7b2933cc6fe
 
 </Project>

@@ -32,7 +32,7 @@ namespace Microwave
             Headless = false;
             // await new InstallCommand().ExecuteAsync(null);
             await new MicrowaveWindow().WriteFullConsole();
-
+            
             return 0;
         }
     }

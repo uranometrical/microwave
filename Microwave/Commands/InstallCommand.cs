@@ -7,6 +7,7 @@ using CliFx.Attributes;
 using CliFx.Infrastructure;
 using Microwave.GitHub;
 using Microwave.Localization;
+using Microwave.Utils;
 using Newtonsoft.Json;
 using Spectre.Console;
 using TomatoKnishes.Internals;
@@ -17,19 +18,14 @@ namespace Microwave.Commands
     [Command("install", Description = "Installs the client.")]
     public class InstallCommand : ICommand, ICommandIdentity
     {
-        public const string LatestReleaseUrl = "https://api.github.com/repos/Uranometrical/Constellar/releases/latest";
+        private const string LatestReleaseUrl = "https://api.github.com/repos/Uranometrical/Constellar/releases/latest";
 
         public string CommandName => "Install Client";
 
-        public string CommandDescription => "Installs the latest stable release of Constellar.";
+        public string CommandDescription => "Installs Constellar Minecraft client.";
 
         [CommandOption("profile", 'p', Description = "Download profile (\"Release\" or \"BleedingEdge\").")]
-        public DownloadProfile Profile
-        {
-            get => Program.Profile;
-
-            set => Program.Profile = value;
-        }
+        private static DownloadProfile Profile { get => Program.Profile; set => Program.Profile = value; }
 
         public async ValueTask ExecuteAsync(IConsole console)
         {
@@ -56,8 +52,9 @@ namespace Microwave.Commands
             AnsiConsole.WriteLine("Download complete!");
         }
 
-        public void AskForInput()
+        private static void AskForInput()
         {
+            // todo: Bleeding Edge instead of BleedingEdge in console
             // Prompt for profile.
             Profile = AnsiConsole.Prompt(
                 new SelectionPrompt<DownloadProfile>()
@@ -66,7 +63,7 @@ namespace Microwave.Commands
             );
         }
 
-        public static async Task DownloadStable()
+        private static async Task DownloadStable()
         {
             HttpClient httpClient = new();
             httpClient.DefaultRequestHeaders.Add("User-Agent", "Constellar/v0.1.0-alpha");
@@ -76,12 +73,6 @@ namespace Microwave.Commands
             string releaseResponseJson = await releaseResponse.Content.ReadAsStringAsync();
             RepositoryRelease latestRelease = JsonConvert.DeserializeObject<RepositoryRelease>(releaseResponseJson);
 
-#if DEBUG
-            foreach (Asset asset in latestRelease.Assets)
-                AnsiConsole.WriteLine(asset.Name + " " + asset.BrowserDownloadUrl);
-#endif
-
-            // TODO: Why the hell is this called ConstellarMain GoodPro?
             // Find .jar file with a name pattern consistent of "ConstellarMain-" at the start and ".jar" at the end. Ignores the version.
             string constellarUrl = latestRelease.Assets
                 .Find(asset => asset.Name.StartsWith("ConstellarMain-") && asset.Name.EndsWith(".jar"))
@@ -97,29 +88,21 @@ namespace Microwave.Commands
 
             try
             {
-                await AnsiConsole.Console.Progress()
-                    .Columns(
-                        new TaskDescriptionColumn(),
-                        new ProgressBarColumn(),
-                        new PercentageColumn(),
-                        new RemainingTimeColumn(),
-                        new SpinnerColumn()
-                    )
-                    .StartAsync(async ctx => await DownloadFile(ctx, constellarUrl));
+                await SpectreFxUtils.AsyncProgressBar(async ctx => await DownloadFile(ctx, constellarUrl));
             }
             catch (Exception e)
             {
                 AnsiConsole.WriteException(e);
             }
 
-            // TODO: bruh
+            // TODO: fix not work 
             AnsiConsole.Ask<string>("Press enter to continue...");
         }
 
-        public static async Task DownloadFile(ProgressContext ctx, string uri)
+        private static async Task DownloadFile(ProgressContext ctx, string uri)
         {
             ProgressTask progressTask = ctx.AddTask(
-                Knishes.GetLocalizedText(LocalizationType.DownloadingConstellar),
+                Knishes.GetLocalizedText(LocalizationType.DownloadingConstellar), 
                 new ProgressTaskSettings
                 {
                     AutoStart = false
@@ -128,9 +111,6 @@ namespace Microwave.Commands
             // stealing my horrible code from SoundsGoodToMe:
             // https://stackoverflow.com/a/56091135
             const int bufferSize = 8192;
-
-            // never sends
-            AnsiConsole.WriteLine("pre try");
 
             try
             {
@@ -177,7 +157,7 @@ namespace Microwave.Commands
             }
             catch (Exception ex)
             {
-                AnsiConsole.MarkupLine($"[red]Error downloading gif:[/] {ex}");
+                AnsiConsole.MarkupLine($"[red]Error downloading Constellar.jar:[/] {ex}");
             }
         }
     }
