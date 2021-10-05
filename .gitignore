@@ -1,4 +1,12 @@
+# Visual Studio
 .vs/
+
+# JetBrains Rider
 .idea/
+
+# User specific files
+*.user
+
+# Build results 
 obj/
 bin/
