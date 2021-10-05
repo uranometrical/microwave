@@ -20,6 +20,10 @@ namespace Microwave.Commands
         public const string LatestReleaseUrl =
             "https://api.github.com/repos/Uranometrical/Constellar/releases/latest";
 
+        public string CommandDescription => "Installs the latest stable release of Constellar.";
+
+        public string CommandName => "Stable Installation";
+
         public async ValueTask ExecuteAsync(IConsole console)
         {
             // todo: output path and minecraft/multimc profiles
@@ -117,8 +121,5 @@ namespace Microwave.Commands
 
             AnsiConsole.WriteLine("Download complete!");
         }
-
-        public string CommandName => "Stable Installation";
-        public string CommandDescription => "Installs the latest stable release of Constellar.";
     }
 }
