@@ -12,11 +12,12 @@ namespace Microwave.Localization
             {
                 {
                     LocalizationType.StaticText, new LocalizedTextEntry(
-                        (LocalizationConstants.English, $"\nWelcome to [bold]Microwave[/], [#{Color.SlateBlue1.ToHex()}]Constellar[/]'s set-up tool." +
-                                                        $"\nRunning version {typeof(MicrowaveLocalization).Assembly.GetName().Version}" +
-                                                        //$"\n  Headless: {Program.Headless}" +
-                                                        //$"\n  Download Profile: {Program.Profile}" +
-                                                        $"\n")
+                        (LocalizationConstants.English,
+                            $"\nWelcome to [bold]Microwave[/], [#{Color.SlateBlue1.ToHex()}]Constellar[/]'s set-up tool." +
+                            $"\nRunning version {typeof(MicrowaveLocalization).Assembly.GetName().Version}" +
+                            //$"\n  Headless: {Program.Headless}" +
+                            //$"\n  Download Profile: {Program.Profile}" +
+                            "\n")
                     )
                 },
 

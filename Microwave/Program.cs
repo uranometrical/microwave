@@ -7,14 +7,14 @@ namespace Microwave
 {
     public static class Program
     {
-        public static bool Headless { get; private set; }
-
-        public static DownloadProfile Profile { get; set; } = DownloadProfile.Release;
-
         static Program()
         {
             Knishes.Localizer.AddProvider<MicrowaveLocalization, LocalizationType>();
         }
+
+        public static bool Headless { get; private set; }
+
+        public static DownloadProfile Profile { get; set; } = DownloadProfile.Release;
 
         public static async Task<int> Main(string[] args)
         {

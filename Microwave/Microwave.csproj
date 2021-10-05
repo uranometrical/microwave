@@ -1,23 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\TomatoKnishes\TomatoKnishes.SpectreFx\TomatoKnishes.SpectreFx.csproj" />
-    <ProjectReference Include="..\TomatoKnishes\TomatoKnishes\TomatoKnishes.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\TomatoKnishes\TomatoKnishes.SpectreFx\TomatoKnishes.SpectreFx.csproj"/>
+        <ProjectReference Include="..\TomatoKnishes\TomatoKnishes\TomatoKnishes.csproj"/>
+    </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Commands\" />
-  </ItemGroup>
+    <ItemGroup>
+        <Folder Include="Commands\"/>
+    </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.1"/>
+    </ItemGroup>
 
 </Project>
