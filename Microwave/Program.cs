@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using CliFx;
+using Microwave.Commands;
 using Microwave.Localization;
 using TomatoKnishes.Internals;
 
@@ -29,7 +30,8 @@ namespace Microwave
             }
 
             Headless = false;
-            new MicrowaveWindow().WriteFullConsole();
+            // await new InstallCommand().ExecuteAsync(null);
+            await new MicrowaveWindow().WriteFullConsole();
 
             return 0;
         }

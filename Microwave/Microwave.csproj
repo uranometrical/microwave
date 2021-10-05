@@ -12,6 +12,7 @@
         <ProjectReference Include="..\TomatoKnishes\TomatoKnishes\TomatoKnishes.csproj"/>
     </ItemGroup>
 
+<<<<<<< HEAD
     <ItemGroup>
         <Folder Include="Commands\"/>
     </ItemGroup>
@@ -19,5 +20,10 @@
     <ItemGroup>
         <PackageReference Include="Newtonsoft.Json" Version="13.0.1"/>
     </ItemGroup>
+=======
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+>>>>>>> 38cc55c566574fb6a0a1d81768dfe7b2933cc6fe
 
 </Project>
