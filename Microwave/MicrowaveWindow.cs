@@ -13,8 +13,8 @@ namespace Microwave
     {
         public override CommandContainer DefaultCommandSet => CreateContainer(new List<ICommand>
         {
-            new StableInstallationCommand(),
-            new BleedingEdgeInstallationCommand()
+            new InstallCommand(),
+            new ExitCommand()
         }, Knishes.GetLocalizedText(LocalizationType.InstallationSetUp), false, false);
 
         public override void WriteStaticConsole(Action? preWrite = null, Action? postWrite = null)

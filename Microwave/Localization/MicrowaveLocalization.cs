@@ -15,7 +15,7 @@ namespace Microwave.Localization
                         (LocalizationConstants.English, $"\nWelcome to [bold]Microwave[/], [#{Color.SlateBlue1.ToHex()}]Constellar[/]'s set-up tool." +
                                                         $"\nRunning version {typeof(MicrowaveLocalization).Assembly.GetName().Version}" +
                                                         //$"\n  Headless: {Program.Headless}" +
-                                                        //$"\n  Download Profile: {Program.Profile}" +
+                                                        //$"\n  DownloadFile Profile: {Program.Profile}" +
                                                         $"\n")
                     )
                 },
