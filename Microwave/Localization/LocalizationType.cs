@@ -3,6 +3,7 @@
     public enum LocalizationType
     {
         StaticText,
-        InstallationSetUp
+        InstallationSetUp,
+        DownloadingConstellar
     }
 }

@@ -1,42 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\Microwave\\Microwave.csproj": {}
+    "/home/charlie/repos/Microwave/Microwave/Microwave.csproj": {}
   },
   "projects": {
-    "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\Microwave\\Microwave.csproj": {
+    "/home/charlie/repos/Microwave/Microwave/Microwave.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\Microwave\\Microwave.csproj",
+        "projectUniqueName": "/home/charlie/repos/Microwave/Microwave/Microwave.csproj",
         "projectName": "Microwave",
-        "projectPath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\Microwave\\Microwave.csproj",
-        "packagesPath": "C:\\Users\\xxlen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\Microwave\\obj\\",
+        "projectPath": "/home/charlie/repos/Microwave/Microwave/Microwave.csproj",
+        "packagesPath": "/home/charlie/.nuget/packages/",
+        "outputPath": "/home/charlie/repos/Microwave/Microwave/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\xxlen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/charlie/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes.SpectreFx\\TomatoKnishes.SpectreFx.csproj": {
-                "projectPath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes.SpectreFx\\TomatoKnishes.SpectreFx.csproj"
+              "/home/charlie/repos/Microwave/TomatoKnishes/TomatoKnishes.SpectreFx/TomatoKnishes.SpectreFx.csproj": {
+                "projectPath": "/home/charlie/repos/Microwave/TomatoKnishes/TomatoKnishes.SpectreFx/TomatoKnishes.SpectreFx.csproj"
               },
-              "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes\\TomatoKnishes.csproj": {
-                "projectPath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes\\TomatoKnishes.csproj"
+              "/home/charlie/repos/Microwave/TomatoKnishes/TomatoKnishes/TomatoKnishes.csproj": {
+                "projectPath": "/home/charlie/repos/Microwave/TomatoKnishes/TomatoKnishes/TomatoKnishes.csproj"
               }
             }
           }
@@ -50,6 +44,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -65,40 +65,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes.SpectreFx\\TomatoKnishes.SpectreFx.csproj": {
+    "/home/charlie/repos/Microwave/TomatoKnishes/TomatoKnishes.SpectreFx/TomatoKnishes.SpectreFx.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes.SpectreFx\\TomatoKnishes.SpectreFx.csproj",
+        "projectUniqueName": "/home/charlie/repos/Microwave/TomatoKnishes/TomatoKnishes.SpectreFx/TomatoKnishes.SpectreFx.csproj",
         "projectName": "TomatoKnishes.SpectreFx",
-        "projectPath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes.SpectreFx\\TomatoKnishes.SpectreFx.csproj",
-        "packagesPath": "C:\\Users\\xxlen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes.SpectreFx\\obj\\",
+        "projectPath": "/home/charlie/repos/Microwave/TomatoKnishes/TomatoKnishes.SpectreFx/TomatoKnishes.SpectreFx.csproj",
+        "packagesPath": "/home/charlie/.nuget/packages/",
+        "outputPath": "/home/charlie/repos/Microwave/TomatoKnishes/TomatoKnishes.SpectreFx/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\xxlen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/charlie/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes\\TomatoKnishes.csproj": {
-                "projectPath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes\\TomatoKnishes.csproj"
+              "/home/charlie/repos/Microwave/TomatoKnishes/TomatoKnishes/TomatoKnishes.csproj": {
+                "projectPath": "/home/charlie/repos/Microwave/TomatoKnishes/TomatoKnishes/TomatoKnishes.csproj"
               }
             }
           }
@@ -137,32 +131,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes\\TomatoKnishes.csproj": {
+    "/home/charlie/repos/Microwave/TomatoKnishes/TomatoKnishes/TomatoKnishes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes\\TomatoKnishes.csproj",
+        "projectUniqueName": "/home/charlie/repos/Microwave/TomatoKnishes/TomatoKnishes/TomatoKnishes.csproj",
         "projectName": "TomatoKnishes",
-        "projectPath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes\\TomatoKnishes.csproj",
-        "packagesPath": "C:\\Users\\xxlen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\xxlen\\OneDrive\\Documents\\Repositories\\Microwave\\TomatoKnishes\\TomatoKnishes\\obj\\",
+        "projectPath": "/home/charlie/repos/Microwave/TomatoKnishes/TomatoKnishes/TomatoKnishes.csproj",
+        "packagesPath": "/home/charlie/.nuget/packages/",
+        "outputPath": "/home/charlie/repos/Microwave/TomatoKnishes/TomatoKnishes/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\xxlen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/charlie/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -195,7 +183,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
         }
       }
     }

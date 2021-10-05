@@ -12,10 +12,10 @@ namespace Microwave.Localization
             {
                 {
                     LocalizationType.StaticText, new LocalizedTextEntry(
-                        (LocalizationConstants.English, $"\n  Welcome to [invert]Microwave[/], [#{Color.Purple.ToHex()}]Constellar[/]'s set-up tool." +
-                                                        $"\n  Running version {typeof(MicrowaveLocalization).Assembly.GetName().Version}" +
-                                                        $"\n  Headless: {Program.Headless}" +
-                                                        $"\n  Download Profile: {Program.Profile}" +
+                        (LocalizationConstants.English, $"\nWelcome to [bold]Microwave[/], [#{Color.SlateBlue1.ToHex()}]Constellar[/]'s set-up tool." +
+                                                        $"\nRunning version {typeof(MicrowaveLocalization).Assembly.GetName().Version}" +
+                                                        //$"\n  Headless: {Program.Headless}" +
+                                                        //$"\n  Download Profile: {Program.Profile}" +
                                                         $"\n")
                     )
                 },
@@ -24,6 +24,11 @@ namespace Microwave.Localization
                     LocalizationType.InstallationSetUp, new LocalizedTextEntry(
                         (LocalizationConstants.English, "Installation set-up:")
                     )
+                },
+
+                {
+                    LocalizationType.DownloadingConstellar, new LocalizedTextEntry(
+                        (LocalizationConstants.English, "Downloading Constellar.jar..."))
                 }
             };
     }
