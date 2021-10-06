@@ -49,7 +49,14 @@ namespace Microwave.Commands
                     throw new Exception("Invalid profile: " + Profile);
             }
 
-            AnsiConsole.WriteLine("Download complete!");
+            // AnsiConsole.Ask is used for text input, not key reads
+            AnsiConsole.WriteLine("Download complete! Press any key to continue...");
+            
+            // Console.ReadKey doesn't actually work with console streams so it's safe to suppress
+            #pragma warning disable CliFx_SystemConsoleShouldBeAvoided
+            Console.ReadKey(true);
+            #pragma warning restore CliFx_SystemConsoleShouldBeAvoided
+            await Task.CompletedTask;
         }
 
         private static void AskForInput()
@@ -94,9 +101,6 @@ namespace Microwave.Commands
             {
                 AnsiConsole.WriteException(e);
             }
-
-            // TODO: fix not work 
-            AnsiConsole.Ask<string>("Press enter to continue...");
         }
 
         private static async Task DownloadFile(ProgressContext ctx, string uri)
