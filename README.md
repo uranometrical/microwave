@@ -1,3 +1,3 @@
-# Microwave
-WIP Constellar installer.
+# microwave
+WIP CLI Constellar installer.
 (todo)
